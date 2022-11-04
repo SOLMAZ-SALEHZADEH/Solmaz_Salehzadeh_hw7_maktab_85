@@ -1,13 +1,11 @@
-
-// question 1
-let salaries = {
-    "jhone":100,
-    "pete":300,
-    "mary":250,
-    "soli":300,
+// question 2
+function sortDescending (...arguments){
+    const data = [...arguments]
+   const arr=[]
+   for (let i=0;i<data.length;i++){
+    arr.push(...arguments[i])
+   }
+  const result =  arr.sort((a,b)=>a-b)
+  console.log(result)
 }
-const test = Object.values(salaries)
-const x = Math.max(...test)
-for (const [key, value] of Object.entries(salaries)) {
-  if(value === x ){console.log(key)}
-}
+sortDescending([1,2,3,9,10,12],[4,5,6,7,8,13,14,15])
