@@ -1,8 +1,19 @@
-// question5
-let map = new Map();
-map.set("name","jhone")
-map.set("last","salehi")
-map.set("midd","soli")
-let keys=map.keys()
-console.log(keys)
-// map does key in not an array so push method cannot be applide
+function onChange() {
+    const password = document.querySelector('input[name=password]');
+    console.log(password)
+    const confirm = document.querySelector('input[name=confirm]');
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity('');
+    } else {
+      confirm.setCustomValidity('Passwords do not match');
+    }
+  }
+
+
+
+//   question 6
+function submitForm(event){
+    // event.preventDefault()
+    console.log(event)
+    console.log("hi")
+}

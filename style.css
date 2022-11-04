@@ -1,0 +1,59 @@
+.formContainer{
+    max-width: 600px;
+    background: lightblue;
+    margin: auto;
+    padding: 18px;
+}
+
+h1{
+    border-bottom: 1px solid #f5f5f5fc;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+input,textarea{
+    display: block;
+    width: 96%;
+    border: none;
+    background: #f5f5f5fc;
+    padding: 12px;
+    margin: 4px 0 20px 0;
+}
+
+label{
+    display: block;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+select{
+    border: 1px solid lightgray;
+    padding: 4px;
+    background: #f5f5f5fc;
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+
+.radioInput{
+display: inline;
+width: fit-content;
+}
+
+.ml-16{
+    margin-left: 16px;
+}
+
+button{
+    width: 100%;
+    background: #3caf3c;
+    border: none;
+    color: white;
+    padding: 12px;
+}
+

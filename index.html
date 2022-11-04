@@ -4,9 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>question1</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
   <body>
+     <div class="formContainer">
+      <h1>student Registeration Form</h1>
+      <form>
+        <label for="Firstname">Firstname</label>
+        <input placeholder="Firstname" name="Firstname" minlength="1" required/>
+
+        <label for="Middlename">Middlename</label>
+        <input placeholder="Middlename" name="Middlename" minlength="1" required/>
+
+        <label for="Lastname">Lastname</label>
+        <input placeholder="Lastname" name="Lastname" minlength="1" required/>
+
+        <label for="Lastname" class="display-inline-block">Course :</label>
+        <select placeholder="Course">
+          <option value="" name="Course">Course</option>
+          <option value="">JS</option>
+          <option value="">React</option>
+          <option value="">PHP</option>
+        </select>
+
+        <label for="Lastname">Gender :</label>
+        <label for="male" class="display-inline-block">Male</label>
+        <input
+          class="radioInput"
+          type="radio"
+          name="gender"
+          id="male"
+          value="male"
+          checked
+        />
+        <label for="female" class="display-inline-block ml-16">Female</label>
+        <input
+          class="radioInput"
+          type="radio"
+          name="gender"
+          id="female"
+          value="female"
+        />
+        <label for="other" class="display-inline-block ml-16">other</label>
+        <input
+          class="radioInput"
+          type="radio"
+          name="gender"
+          id="other"
+          value="other"
+        />
+
+        <label for="Phone">Phone</label>
+        <input placeholder="+98" name="Phone" minlength="11" maxlength="11" required type="number"/>
+
+        <label for="CurrentAddress">Current Address</label>
+        <textarea
+          placeholder="CurrentAddress"
+          name="CurrentAddress"
+          rows="8"
+          minlength="1"
+          required
+        ></textarea>
+
+        <label for="Phone">Email</label>
+        <input placeholder="Email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+
+        <label for="Phone">Password</label>
+        <input placeholder="Password" name="password" type="password" required onChange="onChange()"/>
+
+        <label for="Re-typePassword">Re-type Password</label>
+        <input placeholder="Re-type Password" name="confirm"  type="password" required onChange="onChange()"/>
+
+        <button type="submit" onclick="submitForm(event)">Register</button>
+      </form>
+    </div> 
+   
     <script src="script.js"></script>
   </body>
 </html>
