@@ -1,59 +1,80 @@
-.formContainer{
-    max-width: 600px;
-    background: lightblue;
+/*  */
+.onlineShop{
+    max-width: 1000px;
     margin: auto;
-    padding: 18px;
+    padding: 24px 0;
 }
 
-h1{
-    border-bottom: 1px solid #f5f5f5fc;
-    padding-bottom: 12px;
-    text-align: center;
-}
-
-input,textarea{
-    display: block;
-    width: 96%;
-    border: none;
-    background: #f5f5f5fc;
-    padding: 12px;
-    margin: 4px 0 20px 0;
-}
-
-label{
-    display: block;
-}
-
-form{
-    max-width: 600px;
-    margin: auto;
-}
-
-.display-inline-block{
-    display: inline-block;
-}
-select{
-    border: 1px solid lightgray;
-    padding: 4px;
-    background: #f5f5f5fc;
-    margin-left: 6px;
-    margin-bottom: 20px;
-}
-
-.radioInput{
-display: inline;
-width: fit-content;
-}
-
-.ml-16{
-    margin-left: 16px;
-}
-
-button{
+video{
+    height: 200px;
     width: 100%;
-    background: #3caf3c;
+}
+
+.features{
+    DISPLAY: GRID;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d3d3d35e;
+}
+
+.features button{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    /* border-radius: 8px; */
+    background-color: rgb(55 121 197);
+    color: white;
+}
+
+.features p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+select{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid lightgray;
+    /* border-radius: 8px; */
+}
+
+.titleRow{
+    display: grid;
+    grid-template-columns: repeat(9,1fr) repeat(2,0.5fr) 1fr;
+    grid-gap: 6px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.productsContainer{
+    border:1px solid rgb(233, 229, 229);
+    margin-top: 20px;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(9,1fr) repeat(2,0.5fr) 1fr;
+    grid-gap: 6px;
+    text-align: center;
+    border-bottom: 1px solid rgb(233, 229, 229);
+    padding: 18px 8px 0px 8px;
+}
+
+.product img{
+    width: 100%;
+    margin-top: -18px;
+}
+
+
+.product button{
+    height: fit-content;
+    padding: 6px 6px;
     border: none;
     color: white;
-    padding: 12px;
+    background: #15237b;
+    border-radius: 14px;
 }
+
 

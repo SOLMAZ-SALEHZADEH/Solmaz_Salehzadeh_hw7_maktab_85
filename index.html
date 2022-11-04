@@ -8,78 +8,110 @@
     <title>Document</title>
   </head>
   <body>
-     <div class="formContainer">
-      <h1>student Registeration Form</h1>
-      <form>
-        <label for="Firstname">Firstname</label>
-        <input placeholder="Firstname" name="Firstname" minlength="1" required/>
+    <div class="onlineShop">
+      <video controls></video>
+      <div class="features">
+        <div>
+          <p>laptop model :</p>
+          <select>
+            <option value="1">model 1</option>
+            <option value="2">model 2</option>
+            <option value="3">model 3</option>
+            <option value="4">model 4</option>
+          </select>
+        </div>
+        <div>
+          <p>processors :</p>
+          <select>
+            <option value="1">processors 1</option>
+            <option value="2">processors 2</option>
+            <option value="3">processors 3</option>
+            <option value="4">processors 4</option>
+          </select>
+        </div>
+        <div>
+          <p>ram :</p>
+          <button>RAM</button>
+        </div>
+        <div>
+          <p>hard disk :</p>
+          <button>HARD DISK</button>
+        </div>
+        <div>
+          <p>processors</p>
+          <select>
+            <option value="1">processors 1</option>
+            <option value="2">processors 2</option>
+            <option value="3">processors 3</option>
+            <option value="4">processors 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="titleRow">
+          <div>laptop model</div>
+          <div>picture</div>
+          <div>processor</div>
+          <div>ram</div>
+          <div>hard disk</div>
+          <div>display</div>
+          <div>graphics</div>
+          <div>os</div>
+          <div>weight</div>
+          <div>battery</div>
+          <div>price</div>
+          <div>purchase</div>
+      </div>
+      <div class="productsContainer">
+        <div class="product">
+            <div>laptop model</div>
+            <div>
+                <img src="./images/2a1453e7e026bd24dbe1247bd21ea42d95f438cd_1656159877.jpeg" alt="laptop"/>
+            </div>
+            <div>processor</div>
+            <div>ram</div>
+            <div>hard disk</div>
+            <div>display</div>
+            <div>graphics</div>
+            <div>os</div>
+            <div>5.1"</div>
+            <div>9h</div>
+            <div>70</div>
+            <button>Buy now</button>
+        </div>      <div class="product">
+            <div>laptop model</div>
+            <div>
+                <img src="images/79f4b1e3c31fb22fa193ea1393e2cb8e8a5863cc_1605085571.jpeg" alt="laptop"/>
+            </div>
+            <div>processor</div>
+            <div>ram</div>
+            <div>hard disk</div>
+            <div>display</div>
+            <div>graphics</div>
+            <div>os</div>
+            <div>6.5"</div>
+            <div>6h</div>
+            <div>60</div>
+            <button>Buy now</button>
+        </div>      <div class="product">
+            <div>laptop model</div>
+            <div>
+                <img src="images/f22ade28b99f65aaf53ccb0d91c7547ce0517687_1595855055.jpeg" alt="laptop"/>
+            </div>
+            <div>processor</div>
+            <div>ram</div>
+            <div>hard disk</div>
+            <div>display</div>
+            <div>graphics</div>
+            <div>os</div>
+            <div>7.2"</div>
+            <div>5h</div>
+            <div>50</div>
+            <button>Buy now</button>
+        </div>
+      </div>
 
-        <label for="Middlename">Middlename</label>
-        <input placeholder="Middlename" name="Middlename" minlength="1" required/>
-
-        <label for="Lastname">Lastname</label>
-        <input placeholder="Lastname" name="Lastname" minlength="1" required/>
-
-        <label for="Lastname" class="display-inline-block">Course :</label>
-        <select placeholder="Course">
-          <option value="" name="Course">Course</option>
-          <option value="">JS</option>
-          <option value="">React</option>
-          <option value="">PHP</option>
-        </select>
-
-        <label for="Lastname">Gender :</label>
-        <label for="male" class="display-inline-block">Male</label>
-        <input
-          class="radioInput"
-          type="radio"
-          name="gender"
-          id="male"
-          value="male"
-          checked
-        />
-        <label for="female" class="display-inline-block ml-16">Female</label>
-        <input
-          class="radioInput"
-          type="radio"
-          name="gender"
-          id="female"
-          value="female"
-        />
-        <label for="other" class="display-inline-block ml-16">other</label>
-        <input
-          class="radioInput"
-          type="radio"
-          name="gender"
-          id="other"
-          value="other"
-        />
-
-        <label for="Phone">Phone</label>
-        <input placeholder="+98" name="Phone" minlength="11" maxlength="11" required type="number"/>
-
-        <label for="CurrentAddress">Current Address</label>
-        <textarea
-          placeholder="CurrentAddress"
-          name="CurrentAddress"
-          rows="8"
-          minlength="1"
-          required
-        ></textarea>
-
-        <label for="Phone">Email</label>
-        <input placeholder="Email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-
-        <label for="Phone">Password</label>
-        <input placeholder="Password" name="password" type="password" required onChange="onChange()"/>
-
-        <label for="Re-typePassword">Re-type Password</label>
-        <input placeholder="Re-type Password" name="confirm"  type="password" required onChange="onChange()"/>
-
-        <button type="submit" onclick="submitForm(event)">Register</button>
-      </form>
-    </div> 
-   
+    </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
